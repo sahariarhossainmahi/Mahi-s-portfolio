@@ -3,134 +3,285 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>MD Sahariar Hossain Mahi | Portfolio</title>
 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    
-    <header>
-  <h1>MyPortfolio</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills </a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#home">MyPortfolio</a>
 
-</header>
-
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h2>Hello, I'm <span>MD Sahariar Hossain Mahi</span></h2>
-    <p>I am a 4th-year student at Southeast University.</p>
-    <a href="#contact" class="btn">Hire Me</a>
-  </div>
-
-  
-  <div class="hero-img">
-    <img src="img.jpg/IMG_1594.HEIC" alt="MD Sahariar Hossain Mahi">
-  </div>
-</section>
-
-
-<section class="about" id="about">
-  <h3>About Me</h3>
-  <p>
-    I am a final-year CSE student at Southeast University with a strong interest in web development and frontend technologies. I enjoy turning ideas into visually appealing and functional web interfaces using HTML and CSS. Alongside my academic studies, I actively practice building projects to sharpen my skills. I am eager to learn, adaptable to new technologies, and passionate about creating meaningful digital experiences.
-  </p>
-  
-</section>
-
-<section class="skills" id="skills">
-  <h3>Skills</h3>
-  <div class="skills-list">
-    <span>HTML</span>
-    <span>CSS</span>
-    
-  </div>
-</section>
-
-<section class="projects" id="projects">
-  <h3>Projects</h3>
-  <div class="card">
-    <h4>Portfolio Website</h4>
-    <p>A modern personal portfolio website.</p>
-  </div>
-  <div class="card">
-    <h4>Todo App</h4>
-    <p>Comming soon</p>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h3>Contact Me</h3>
-
-  <form id="contact-form">
-    <input type="text" name="from_name" placeholder="Your Name" required>
-    <input type="email" name="from_email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-
-  <!-- Right: my Info Box -->
-    <div class="contact-info">
-      <h4>My Info</h4>
-
-      <p><strong>Name:</strong> MD Sahariar Hossain Mahi</p>
-      <p><strong>University:</strong> Southeast University</p>
-      <p><strong>Department:</strong> CSE (Final Year)</p>
-
-      <p><strong>Email:</strong> mdsahariarhossainmahi@gmail.com</p>
-      <p><strong>Phone:</strong> +8801746616678</p>
-      <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-
-      <div class="social-links">
-        <a href="https://github.com/sahariarhossainmahi" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/mdsahariarhossainmahi" target="_blank">LinkedIn</a>
-        <a href="https://facebook.com/Md.saharaiar.75" target="_blank">Facebook</a>
-      </div>
+      <nav class="nav">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Frontend Learner • CSE Final Year</p>
+          <h1>Hello, I'm <span>MD Sahariar Hossain Mahi</span></h1>
+          <p class="lead">
+            Final-year CSE student at Southeast University. I build clean, responsive web interfaces with HTML & CSS.
+          </p>
 
-<footer>
-  <p>© 2026 Md Sahariar Hossain Mahi | All Rights Reserved</p>
-</footer>
+          <div class="cta-row">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="img.jpg/mahi cv.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download CV</a>
+          </div>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+          <div class="mini-stats">
+            <div class="stat">
+              <p class="stat-num">2+</p>
+              <p class="stat-label">Projects</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">HTML</p>
+              <p class="stat-label">Core Skill</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">CSS</p>
+              <p class="stat-label">Core Skill</p>
+            </div>
+          </div>
+        </div>
 
-</script>
+        <div class="hero-card reveal delay-1">
 
-<script>
-  (function(){
-    emailjs.init("b_XuOj6uf578Catzb");
-  })();
+          <img class="avatar-wrap" src="img.jpg/IMG_1594.png" alt="MD Sahariar Hossain Mahi">
+          <div class="hero-card-text">
+            <p class="name">MD Sahariar Hossain Mahi</p>
+            <p class="muted">Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-box reveal">
+          <div class="section-head">
+            <h2>About Me</h2>
+            <p class="muted">A short intro about me</p>
+          </div>
 
-    emailjs.sendForm(
-      "service_jpdxjc7",
-      "template_oxef9k5",
-      this
-    ).then(
-      function() {
-        alert("Message sent successfully!");
-      },
-      function(error) {
-        alert("Failed to send message");
-        console.log(error);
+          <p class="text">
+            I am a final-year CSE student at Southeast University with a strong interest in web development and frontend technologies.
+            I enjoy turning ideas into visually appealing and functional web interfaces using HTML and CSS.
+            Alongside my academic studies, I actively practice building projects to sharpen my skills.
+            I am eager to learn, adaptable to new technologies, and passionate about creating meaningful digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-box reveal">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p class="muted">What I use frequently</p>
+          </div>
+
+          <div class="chips">
+            <span class="chip">🌐 HTML</span>
+            <span class="chip">🎨 CSS</span>
+            <span class="chip">⚡ JavaScript (Learning)</span>
+            <span class="chip">📱 Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-box reveal">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="muted">A few things I’ve built</p>
+          </div>
+
+          <div class="grid">
+            <!-- Project 1 -->
+            <article class="card reveal">
+              <div class="project-thumb thumb-portfolio" aria-hidden="true"></div>
+
+              <div class="card-body">
+                <h3>Portfolio Website</h3>
+                <p class="muted">A modern portfolio website with responsive layout.</p>
+
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Responsive</span>
+                </div>
+
+                <div class="card-actions">
+                  <a class="link-btn" href="#" target="_blank" rel="noopener">Live</a>
+                  <a class="link-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card reveal delay-1">
+              <div class="project-thumb thumb-todo" aria-hidden="true"></div>
+
+              <div class="card-body">
+                <h3>Todo App</h3>
+                <p class="muted">Coming soon (with JavaScript + local storage).</p>
+
+                <div class="tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+
+                <div class="card-actions">
+                  <a class="link-btn disabled" href="javascript:void(0)">Live</a>
+                  <a class="link-btn disabled" href="javascript:void(0)">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-box reveal">
+          <div class="section-head">
+            <h2>Contact Me</h2>
+            <p class="muted">Let’s talk about your idea</p>
+          </div>
+
+          <div class="contact-wrap">
+            <form id="contact-form" class="form reveal">
+              <input type="text" name="from_name" placeholder="Your Name" required>
+              <input type="email" name="from_email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Message" rows="6" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+              <p class="form-note muted">Typically replies within 24–48 hours.</p>
+            </form>
+
+            <aside class="info reveal delay-1">
+              <h3>My Info</h3>
+              <div class="info-list">
+                <p><strong>Name:</strong> MD Sahariar Hossain Mahi</p>
+                <p><strong>University:</strong> Southeast University</p>
+                <p><strong>Department:</strong> CSE (Final Year)</p>
+                <p><strong>Email:</strong> mdsahariarhossainmahi@gmail.com</p>
+                <p><strong>Phone:</strong> +8801746616678</p>
+                <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+              </div>
+
+              <div class="social">
+                <a href="https://github.com/sahariarhossainmahi" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/mdsahariarhossainmahi" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://facebook.com/Md.saharaiar.75" target="_blank" rel="noopener">Facebook</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© 2026 Md Sahariar Hossain Mahi | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("b_XuOj6uf578Catzb");
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_jpdxjc7","template_oxef9k5", this)
+        .then(function() {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+        }, function(error) {
+          alert("Failed to send message");
+          console.log(error);
+        });
+    });
+
+    
+    (function () {
+      const header = document.querySelector(".site-header");
+      const links = Array.from(document.querySelectorAll(".nav-link"));
+      const sections = Array.from(document.querySelectorAll("section[id]"));
+
+      let ticking = false;
+
+      function setActive() {
+        const offset = header.offsetHeight + 24;
+        const pos = window.scrollY + offset;
+
+        let currentId = sections[0]?.id || "home";
+        for (const sec of sections) {
+          if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+            currentId = sec.id;
+            break;
+          }
+        }
+
+        links.forEach(a => {
+          const href = a.getAttribute("href");
+          if (href === `#${currentId}`) a.classList.add("active");
+          else a.classList.remove("active");
+        });
+
+        ticking = false;
       }
-    );
-  });
-</script>
 
+      function onScroll() {
+        if (!ticking) {
+          window.requestAnimationFrame(setActive);
+          ticking = true;
+        }
+      }
 
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("load", setActive);
+    })();
+
+    
+    (function () {
+      const els = document.querySelectorAll(".reveal");
+      const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      els.forEach(el => obs.observe(el));
+    })();
+  </script>
 </body>
 </html>
